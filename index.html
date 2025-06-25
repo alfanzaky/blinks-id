@@ -10,14 +10,10 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <div id="navbar-container"></div>
-
-  <!-- Alert -->
-  <div id="alert-container"></div>
-
-  <!-- Hero Section -->
-  <section id="hero-section"></section>
+  <!-- Komponen Dinamis -->
+  <div data-include="components/alert.html"></div>
+  <div data-include="components/navbar.html"></div>
+  <div data-include="components/hero.html"></div>
 
   <!-- Konten Utama -->
   <main class="container my-5">
@@ -27,32 +23,19 @@
     </div>
 
     <!-- Card Airdrop -->
-    <div id="card-airdrop-container" class="row g-4 justify-content-center"></div>
+    <div data-include="components/card-airdrop.html" class="row g-4 justify-content-center"></div>
 
     <!-- CTA -->
-    <div id="cta-container" class="mt-5"></div>
+    <div data-include="components/cta.html" class="mt-5"></div>
   </main>
 
-  <!-- Footer -->
-  <div id="footer-container"></div>
+  <!-- Footer & Modal -->
+  <div data-include="components/footer.html"></div>
+  <div data-include="components/modal.html"></div>
 
-  <!-- Modal -->
-  <div id="modal-container"></div>
-
-  <!-- Script Bootstrap -->
+  <!-- Script -->
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Script Include Modular -->
   <script src="components/js/include.js"></script>
-  <script>
-    // Load semua komponen modular
-    includeHTML("navbar-container", "components/navbar.html");
-    includeHTML("footer-container", "components/footer.html");
-    includeHTML("alert-container", "components/alert.html");
-    includeHTML("hero-section", "components/hero.html");
-    includeHTML("cta-container", "components/cta.html");
-    includeHTML("card-airdrop-container", "components/card-airdrop.html");
-    includeHTML("modal-container", "components/modal.html");
-  </script>
+  <script src="components/js/interaksi.js"></script>
 </body>
 </html>
