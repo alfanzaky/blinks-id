@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Airdrop - Blinks ID</title>
+  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/bootstrap/icons/bootstrap-icons.css" />
+  <link rel="icon" href="../assets/img/favicon.png" />
+</head>
+<body>
 
+  <!-- Komponen -->
+  <div data-include="../components/navbar.html"></div>
+  <div data-include="../components/alert.html"></div>
+
+  <main class="container my-5">
+    <div class="mb-4">
+      <h2 class="fw-bold text-center">📦 Daftar Airdrop Terkini</h2>
+      <p class="text-center text-muted">Temukan airdrop terpercaya dengan info singkat dan jelas.</p>
+    </div>
+
+    <!-- Box Filter dan Kategori -->
+    <div class="bg-light p-3 rounded shadow-sm mb-4">
+      <div class="row g-2 align-items-center">
+        <div class="col-md-8">
+          <div class="btn-group" role="group" aria-label="Kategori">
+            <button class="btn btn-outline-primary btn-sm">Crypto</button>
+            <button class="btn btn-outline-primary btn-sm">NFT</button>
+            <button class="btn btn-outline-primary btn-sm">GameFi</button>
+            <button class="btn btn-outline-primary btn-sm">Baru</button>
+          </div>
+        </div>
+        <div class="col-md-4 text-md-end mt-2 mt-md-0">
+          <select class="form-select form-select-sm">
+            <option>Urutkan: Terbaru</option>
+            <option>Berakhir Terdekat</option>
+            <option>Paling Populer</option>
+            <option>Terverifikasi</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Airdrop -->
+    <div data-include="../components/card-airdrop.html" class="row g-4"></div>
+  </main>
+
+  <div data-include="../components/footer.html"></div>
+  <div data-include="../components/modal.html"></div>
+
+  <!-- Scripts -->
+  <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../components/js/include.js"></script>
+  <script src="../components/js/interaksi.js"></script>
+</body>
+</html>
