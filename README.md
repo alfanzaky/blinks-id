@@ -15,6 +15,17 @@ blinks-id/
 ├── pages/                     # Halaman tambahan
 ├── index.html                 # Halaman utama
 
+## 🔍 Preview
+Website ini bisa dilihat secara langsung via GitHub Pages:  
+🔗 https://alfanzaky.github.io/blinks-id
+
+## 🤝 Kontribusi
+Jika ingin berkontribusi:
+1. Fork repositori ini
+2. Buat branch baru (`git checkout -b fitur-baru`)
+3. Commit perubahan kamu
+4. Buka pull request
+
 ## 🛠️ Pengembangan Selanjutnya
 - Integrasi dengan GitHub Pages
 - Penambahan komponen interaktif modular
